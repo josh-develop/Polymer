@@ -1,20 +1,55 @@
-<!DOCTYPE html>
- <html>
-  <head>
-   <!-- 1. Load platform.js for polyfill support. -->
-    <script src="bower_components/platform/platform.js"></script>
-   <!-- 2. Use an HTML Import to bring in the element. -->
-   <link rel="import"
-          href="imports.html">
-    
-  </head>
-  <body>
-    
-          <h1>Core & Paper Elements</h1>
+<!doctype html>
+<html>
+
+<head>
+
+    <title>unquote</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="./bower_components/webcomponentsjs/webcomponents.js">
+    </script>
+
+    <link rel="import" href="./imports.html">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+            paper-input.narrow {
+          width: 150px;
+        }
+        
+        core-input {
+            width: 150px;
+            border:1px solid #AAA;
+            padding:3px;
+            margin:10px;
+        }
+     
+    </style>
+
+</head>
+
+<body unresolved>
+   <h1>Core & Paper Elements</h1>
 <ul>
-  <li>strong<Basic Text Input : Core</strong>
-    <core-input id="single" placeholder="Type something..."></core-input>
+ <li>
+  <strong>Basic Text Input : Core</strong>
+    <paper-input label="Type Something" layout vertical></paper-input>
+  </li>
+  <li>
+   <strong>Basic Text Input : Paper</strong>
+  <paper-input label="Type Something" layout vertical></paper-input>
   </li>
 </ul>
-  </body>
+    <script>
+
+    </script>
+</body>
+
 </html>
